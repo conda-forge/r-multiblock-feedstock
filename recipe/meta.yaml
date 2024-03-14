@@ -1,4 +1,4 @@
-{% set version = "0.8.8" %}
+{% set version = "0.8.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multiblock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multiblock/multiblock_{{ version }}.tar.gz
-  sha256: 5a1ae777ba318eabd941389c3b84e77fcd01de77ed685e7d41af6c4f6e69e765
+  sha256: f79aa617499eb8a2d9f6a53e274acfdebd48b9aee468952321da3992af999d2c
 
 build:
   skip: true  # [win]
