@@ -1,4 +1,4 @@
-{% set version = "0.8.8.1" %}
+{% set version = "0.8.8.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multiblock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multiblock/multiblock_{{ version }}.tar.gz
-  sha256: f79aa617499eb8a2d9f6a53e274acfdebd48b9aee468952321da3992af999d2c
+  sha256: 786e153f9faadfa0659aa06eb1bdf390eb004255b3442d2ad18a24b893fbe617
 
 build:
   skip: true  # [win]
@@ -23,7 +23,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem            # [win]
