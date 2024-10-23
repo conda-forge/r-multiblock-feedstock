@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multiblock-fe
 About r-multiblock
 ------------------
 
-Home: https://khliland.github.io/multiblock/, https://github.com/khliland/multiblock/
+Home: https://khliland.github.io/multiblock/
 
 Package license: GPL-2.0-or-later
 
 Summary: Functions and datasets to support Smilde, Næs and Liland (2021, ISBN: 978-1-119-60096-1) "Multiblock Data Fusion in Statistics and Machine Learning - Applications in the Natural and Life Sciences". This implements and imports a large collection of methods for multiblock data analysis with common interfaces, result- and plotting functions, several real data sets and six vignettes covering a range different applications.
+
+Development: https://github.com/khliland/multiblock/
 
 About r-multiblock
 ------------------
 
-Home: https://khliland.github.io/multiblock/, https://github.com/khliland/multiblock/
+Home: https://khliland.github.io/multiblock/
 
 Package license: GPL-2.0-or-later
 
 Summary: Functions and datasets to support Smilde, Næs and Liland (2021, ISBN: 978-1-119-60096-1) "Multiblock Data Fusion in Statistics and Machine Learning - Applications in the Natural and Life Sciences". This implements and imports a large collection of methods for multiblock data analysis with common interfaces, result- and plotting functions, several real data sets and six vignettes covering a range different applications.
+
+Development: https://github.com/khliland/multiblock/
 
 Current build status
 ====================
