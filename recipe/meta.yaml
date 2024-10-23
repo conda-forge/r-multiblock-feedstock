@@ -12,8 +12,6 @@ source:
   sha256: 786e153f9faadfa0659aa06eb1bdf390eb004255b3442d2ad18a24b893fbe617
 
 build:
-  # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: true  # [win]
   number: 1
   rpaths:
     - lib/R/lib/
@@ -79,39 +77,17 @@ test:
     - "\"%R%\" -e \"library('multiblock')\""  # [win]
 
 about:
-  home: https://khliland.github.io/multiblock/, https://github.com/khliland/multiblock/
+  home: https://khliland.github.io/multiblock/
+  dev_url: https://github.com/khliland/multiblock/
   license: GPL-2.0-or-later
   summary: "Functions and datasets to support Smilde, Næs and Liland (2021, ISBN: 978-1-119-60096-1) \"Multiblock Data Fusion in Statistics and Machine Learning - Applications in the Natural and Life Sciences\". This implements and imports a large collection of methods for multiblock data analysis with common interfaces,
     result- and plotting functions, several real data sets and six vignettes covering a range different applications."
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
-# Encoding: UTF-8
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
     - conda-forge/r
     - RJMW
-
-# Package: multiblock
-# Type: Package
-# Title: Multiblock Data Fusion in Statistics and Machine Learning
-# Version: 0.8.6
-# Date: 2023-06-04
-# Authors@R: c(person(given = "Kristian Hovde", family = "Liland", role = c("aut", "cre"), email = "kristian.liland@nmbu.no", comment = c(ORCID = "0000-0001-6468-9423")), person(given = "Solve", family = "Sb", role = c("ctb")), person(given = "Stefan", family = "Schrunner", role = c("rev")))
-# Description: Functions and datasets to support Smilde, Ns and Liland (2021, ISBN: 978-1-119-60096-1) "Multiblock Data Fusion in Statistics and Machine Learning - Applications in the Natural and Life Sciences". This implements and imports a large collection of methods for multiblock data analysis with common interfaces, result- and plotting functions, several real data sets and six vignettes covering a range different applications.
-# License: GPL (>= 2)
-# URL: https://khliland.github.io/multiblock/, https://github.com/khliland/multiblock/
-# BugReports: https://github.com/khliland/multiblock/issues/
-# Depends: R (>= 3.5.0)
-# Imports: ade4, car, lme4, MASS, mixlm, plotrix, pls, plsVarSel, pracma, progress, Rcpp, RSpectra, SSBtools
-# Suggests: FactoMineR, geigen, RegularizedSCA, RGCCA (>= 3.0.0), r.jive, rmarkdown, knitr
-# LinkingTo: Rcpp, RcppEigen
-# RoxygenNote: 7.2.3
-# VignetteBuilder: knitr
-# NeedsCompilation: yes
-# Packaged: 2023-06-04 20:00:05 UTC; kristian
-# Author: Kristian Hovde Liland [aut, cre] (<https://orcid.org/0000-0001-6468-9423>), Solve Sb [ctb], Stefan Schrunner [rev]
-# Maintainer: Kristian Hovde Liland <kristian.liland@nmbu.no>
-# Repository: CRAN
-# Date/Publication: 2023-06-04 20:20:02 UTC
