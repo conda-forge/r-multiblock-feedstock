@@ -44,6 +44,7 @@ requirements:
   host:
     - xorg-libxfixes                   # [linux]
     - r-base
+    - r-hdanova
     - r-mass
     - r-rspectra
     - r-rcpp
@@ -51,7 +52,6 @@ requirements:
     - r-ssbtools
     - r-ade4
     - r-car
-    - r-lme4
     - r-mixlm
     - r-plotrix
     - r-pls
@@ -60,6 +60,7 @@ requirements:
     - r-progress
   run:
     - r-base
+    - r-hdanova
     - r-mass
     - r-rspectra
     - r-rcpp
@@ -67,7 +68,6 @@ requirements:
     - r-ssbtools
     - r-ade4
     - r-car
-    - r-lme4
     - r-mixlm
     - r-plotrix
     - r-pls
