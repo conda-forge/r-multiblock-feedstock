@@ -1,4 +1,4 @@
-{% set version = "0.8.9.0" %}
+{% set version = "0.8.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multiblock_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multiblock/multiblock_{{ version }}.tar.gz
-  sha256: de5e86b2328879dc8fa694b0837ced5c543b6bacdc787d81b32d3608179de823
+  sha256: c0f658e4cf8456f924c7546ec90aeb6defa5496959dff46d59a135f837321f84
 
 build:
   number: 0
