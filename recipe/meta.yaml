@@ -74,6 +74,7 @@ requirements:
     - r-plsvarsel
     - r-pracma
     - r-progress
+
 test:
   commands:
     - $R -e "library('multiblock')"           # [not win]
