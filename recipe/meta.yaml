@@ -12,7 +12,7 @@ source:
   sha256: c0f658e4cf8456f924c7546ec90aeb6defa5496959dff46d59a135f837321f84
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,12 +35,6 @@ requirements:
     - {{ posix }}coreutils             # [win]
     - {{ posix }}zip                   # [win]
     - cross-r-base {{ r_base }}        # [build_platform != target_platform]
-    - {{ cdt('mesa-libgl-devel') }}    # [linux]
-    - {{ cdt('mesa-dri-drivers') }}    # [linux]
-    - {{ cdt('libselinux') }}          # [linux]
-    - {{ cdt('libxdamage') }}          # [linux]
-    - {{ cdt('libxxf86vm') }}          # [linux]
-    - {{ cdt('libxext') }}             # [linux]
   host:
     - xorg-libxfixes                   # [linux]
     - r-base
@@ -58,6 +52,7 @@ requirements:
     - r-plsvarsel
     - r-pracma
     - r-progress
+    - libgl-devel                      # [linux]
   run:
     - r-base
     - r-hdanova >=0.8.2
